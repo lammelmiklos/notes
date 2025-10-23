@@ -21,6 +21,7 @@ Explanation why different kernel version and os version:
 
 # Codespace layers:
 GitHub Codespace can be thought of as a stack of three layers:
+```
 ┌───────────────────────────┐
 │  Your development tools   │  ← inside your container (Ubuntu 24.04)
 │  (bash, git, gcc, etc.)   │
@@ -29,7 +30,7 @@ GitHub Codespace can be thought of as a stack of three layers:
 ├───────────────────────────┤
 │  Host VM kernel (Azure)   │  ← managed by GitHub on Azure, Ubuntu 22.04 kernel
 └───────────────────────────┘
-
+```
 So when you open the terminal in a Codespace, you’re inside the top layer (container) — but that container shares the kernel with the host VM running underneath.
 
 /etc/os-release (which lives inside the container filesystem) says Ubuntu 24.04,
@@ -149,7 +150,7 @@ docker run --rm --privileged alpine dmesg
 - ip addr show | grep docker → docker0 bridge (172.17.0.1/16) inside the container’s namespace → DinD.
 
 These three together (3–5) are conclusive for DinD in your Codespace.
-
+```
 1) ps aux | grep dockerd | grep -v grep
    ├─ shows dockerd PID inside container → likely DinD
    │   ├─ docker info | grep "Docker Root Dir" == /var/lib/docker (container FS) → DinD confirmed
@@ -157,4 +158,4 @@ These three together (3–5) are conclusive for DinD in your Codespace.
    └─ no dockerd process inside → maybe DooD
        ├─ ls -l /var/run/docker.sock present → CLI talking to host daemon → DooD
        └─ docker info “Docker Root Dir” is a host path; no docker0 in container → DooD confirmed
-
+```
