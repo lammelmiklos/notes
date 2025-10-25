@@ -1,6 +1,6 @@
 ## IQ sampling sources
 https://pysdr.org/content/sampling.html \
-https://en.wikipedia.org/wiki/In-phase_and_quadrature_components \
+https://en.wikipedia.org/wiki/In-phase_and_quadrature_components
 
 
 ## Recommendations from Reddit
@@ -16,7 +16,7 @@ Modern Antenna Design by Milligan
 
 **Modern Antenna Handbook - Balanis - "Academic holy bible"** \
 https://www.amazon.de/-/en/gp/product/8126539356/ref=ewc_pr_img_1?smid=ALS1G1RTZL94R&psc=1 \
-Youtube: https://www.youtube.com/watch?v=GfgaJcir2XE&list=PLG-26LC4tvHe6QqV3bMzjkUROqxhvHG_L&index=1 \
+Youtube: https://www.youtube.com/watch?v=GfgaJcir2XE&list=PLG-26LC4tvHe6QqV3bMzjkUROqxhvHG_L&index=1
 
 
 Antenna Engineering Handbook - Volakis - good application focused book
