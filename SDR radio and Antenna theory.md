@@ -1,9 +1,9 @@
-## IQ sampling sources \
+## IQ sampling sources
 https://pysdr.org/content/sampling.html \
 https://en.wikipedia.org/wiki/In-phase_and_quadrature_components \
 
 
-## Recommendations from Reddit \
+## Recommendations from Reddit
 https://www.reddit.com/r/rfelectronics/comments/o9b8yu/good_book_to_learn_basic_antenna_design/?rdt=37138 \
 https://www.reddit.com/r/ECE/comments/12upsgm/book_for_antenna_designs/
 
